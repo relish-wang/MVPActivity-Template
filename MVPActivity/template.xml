@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<template
+    format="5"
+    revision="5"
+    name="MVP Activity"
+    minApi="7"
+    minBuildApi="14"
+    description="Creates a new activity with MVP group">
+
+    <category value="Activity" />
+    <formfactor value="Mobile" />
+
+    <parameter
+        id="mvpName"
+        name="MVP Name"
+        type="string"
+        constraints="unique|nonempty"
+        suggest="Main"
+        default="Main"
+        help="The name of the MVP group" />
+
+    <parameter
+        id="activityClass"
+        name="Activity Name"
+        type="string"
+        constraints="class|unique|nonempty"
+        suggest="${mvpName}Activity"
+        default="MainActivity"
+        help="The name of the activity class to create" />
+
+    <parameter
+        id="layoutName"
+        name="Layout Name"
+        type="string"
+        constraints="layout|unique|nonempty"
+        suggest="${activityToLayout(activityClass)}"
+        default="activity_main"
+        help="The name of the layout to create for the activity" />
+    
+    <parameter
+        id="isLauncher"
+        name="Launcher Activity"
+        type="boolean"
+        default="false"
+        help="If true, this activity will have a CATEGORY_LAUNCHER intent filter, making it visible in the launcher" />
+
+    <parameter
+        id="packageName"
+        name="Package name"
+        type="string"
+        constraints="package"
+        default="com.mycompany.myapp" />
+
+    <!-- Model -->
+    <parameter
+        id="iMName"
+        name="Mode interface lName"
+        type="string"
+        constraints="class|unique|nonempty"
+        suggest="I${mvpName}Model"
+        default="IMainModle"
+        help="The name of the model interface to create" />
+
+    <parameter
+        id="mName"
+        name="Model Name"
+        type="string"
+        constraints="class|unique|nonempty"
+        suggest="${mvpName}Model"
+        default="MainModle"
+        help="The name of the model class to create" />
+
+    <!-- View -->
+    <parameter
+        id="iVName"
+        name="View Interface Name"
+        type="string"
+        constraints="class|unique|nonempty"
+        suggest="I${mvpName}View"
+        default="IMainView"
+        help="The name of the view interface to create" />
+
+    <!-- Presenter -->
+    <parameter
+        id="iPName"
+        name="Presenter interface Name"
+        type="string"
+        constraints="class|unique|nonempty"
+        suggest="I${mvpName}Presenter"
+        default="IMainPresenter"
+        help="The name of the presenter interface to create" />
+
+    <parameter
+        id="pName"
+        name="Presenter Name"
+        type="string"
+        constraints="class|unique|nonempty"
+        suggest="${mvpName}Presenter"
+        default="MainPresenter"
+        help="The name of the Presenter class to create" />
+
+    <!-- 128x128 thumbnails relative to template.xml -->
+    <thumbs>
+        <!-- default thumbnail is required -->
+        <thumb>template_mvp_activity.png</thumb>
+    </thumbs>
+
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>
