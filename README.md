@@ -7,13 +7,11 @@ Restart Android Studio, and you will find it in: **New->Activity->MVPActivity**
 ![MVPActivity](https://github.com/relish-wang/MVPActivity-Template/blob/master/MVPActivity.gif)
  
 ##ChangeLog
- 
 - [ChangeLog:](https://github.com/relish-wang/MVPActivity-Template/blob/master/CHANGELOG.md)A comlete changelog.
  
 ##Credits
--------
 Author: wangxin (r3lish.email@gmail.com)
---- 
+
 
 ##License
 -------
