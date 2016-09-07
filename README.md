@@ -13,7 +13,8 @@ Restart Android Studio, and you will find it in: **New->Activity->MVPActivity**
 ##Credits
 -------
 Author: wangxin (r3lish.email@gmail.com)
- 
+--- 
+
 ##License
 -------
 
