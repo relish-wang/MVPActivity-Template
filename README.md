@@ -10,13 +10,13 @@ Restart Android Studio, and you will find it in: **New->Activity->MVPActivity**
 - [ChangeLog:](https://github.com/relish-wang/MVPActivity-Template/blob/master/CHANGELOG.md)A comlete changelog.
  
 ##Credits
-- Author: wangxin (r3lish.email@gmail.com)
+- Author: Relish Wang (r3lish.email@gmail.com)
 
 
 ##License
 -------
 
-    Copyright 2014 Relish Wang
+    Copyright 2016 Relish Wang
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
