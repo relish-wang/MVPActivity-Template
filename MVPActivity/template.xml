@@ -54,7 +54,7 @@
     <!-- Model -->
     <parameter
         id="iMName"
-        name="Mode interface lName"
+        name="Mode interface Name"
         type="string"
         constraints="class|unique|nonempty"
         suggest="I${mvpName}Model"
