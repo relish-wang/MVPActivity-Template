@@ -3,7 +3,7 @@ package ${packageName}.imp;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import ${applicationPackage}.R;
+<#if applicationPackage??>import ${applicationPackage}.R;</#if>
 import ${packageName}.define.${iPName};
 import ${packageName}.define.${iVName};
 
