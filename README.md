@@ -6,14 +6,14 @@ Copy `MVPActivity` folder in your Android Studio installation in this folder:  `
 Restart Android Studio, and you will find it in: **New->Activity->MVPActivity**
 ![MVPActivity](https://github.com/relish-wang/MVPActivity-Template/blob/master/MVPActivity.gif)
  
-##ChangeLog
+## ChangeLog
 - [ChangeLog:](https://github.com/relish-wang/MVPActivity-Template/blob/master/CHANGELOG.md)A comlete changelog.
  
-##Credits
+## Credits
 - Author: Relish Wang (r3lish.email@gmail.com)
 
 
-##License
+## License
 -------
 
     Copyright 2016 Relish Wang
